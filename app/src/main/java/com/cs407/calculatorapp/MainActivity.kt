@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity() {
         val buttonDivide = findViewById<Button>(R.id.buttonDivide)
 
         buttonAdd.setOnClickListener{
-            val num1 = editTextNumber1.text.toString().toIntOrNull()
-            val num2 = editTextNumber2.text.toString().toIntOrNull()
+            val num1 = editTextNumber1.text.toString().toFloatOrNull()
+            val num2 = editTextNumber2.text.toString().toFloatOrNull()
             if (num1 != null && num2 != null) {
                 val result = num1 + num2
                 val intent = Intent(this, ResultActivity::class.java)
@@ -41,8 +41,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
         buttonSubtract.setOnClickListener{
-            val num1 = editTextNumber1.text.toString().toIntOrNull()
-            val num2 = editTextNumber2.text.toString().toIntOrNull()
+            val num1 = editTextNumber1.text.toString().toFloatOrNull()
+            val num2 = editTextNumber2.text.toString().toFloatOrNull()
             if (num1 != null && num2 != null) {
                 val result = num1 - num2
                 val intent = Intent(this, ResultActivity::class.java)
@@ -54,8 +54,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
         buttonMultiply.setOnClickListener{
-            val num1 = editTextNumber1.text.toString().toIntOrNull()
-            val num2 = editTextNumber2.text.toString().toIntOrNull()
+            val num1 = editTextNumber1.text.toString().toFloatOrNull()
+            val num2 = editTextNumber2.text.toString().toFloatOrNull()
             if (num1 != null && num2 != null) {
                 val result = num1 * num2
                 val intent = Intent(this, ResultActivity::class.java)
@@ -67,8 +67,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
         buttonDivide.setOnClickListener{
-            val num1 = editTextNumber1.text.toString().toIntOrNull()
-            val num2 = editTextNumber2.text.toString().toIntOrNull()
+            val num1 = editTextNumber1.text.toString().toFloatOrNull()
+            val num2 = editTextNumber2.text.toString().toFloatOrNull()
             if (num1 != null && num2 != null) {
                 val result = num1 / num2
                 val intent = Intent(this, ResultActivity::class.java)
